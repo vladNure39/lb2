@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .checkbox-group {
+        margin: 20px;
+      }
+
+      label {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      input[type="checkbox"] + label {
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      input[type="checkbox"]:checked + label {
+        background-color: #003cff57;
+
+        border-color: #003cff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#home">Головна</a>
+      <a href="#about">Про нас</a>
+      <a href="#services">Послуги</a>
+      <a href="#contact">Контакти</a>
+    </div>
+    <h2 style="position: relative; left: 20px; top: 10px">
+      Виберіть свої уподобання:
+    </h2>
+    <div class="checkbox-group">
+      <input type="checkbox" id="option1" name="preferences" value="option1" />
+      <label for="option1">Читання</label>
+    </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="option2" name="preferences" value="option2" />
+      <label for="option2">Спорт</label>
+    </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="option3" name="preferences" value="option3" />
+      <label for="option3">Музика</label>
+    </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="option4" name="preferences" value="option4" />
+      <label for="option4">Подорожі</label>
+    </div>
+
+    <div class="container">
+      <div class="item green">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item green">9</div>
+    </div>
+  </body>
+</html>
